@@ -15,7 +15,7 @@ const Populer = () => {
           }}
         >
           <div className="hero-overlay bg-opacity-20"></div>
-          <h1 className="text-6xl font-bold text-white">Travel Packages</h1>
+          <h1 className="text-6xl font-bold text-white text-center">Travel Packages</h1>
         </div>
       </div>
 

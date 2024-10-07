@@ -39,18 +39,18 @@ const Navber = () => {
       <div className="navbar bg-white">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="lg:hidden">
               <IoMenu></IoMenu>
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-white  z-[1] mt-3 w-52 p-2 shadow"
             >
               {/*  */}
               {navlink}
             </ul>
           </div>
-          <img className="btn btn-ghost text-xl" src={logo} alt="" />
+          <img className="" src={logo} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-5 px-1">

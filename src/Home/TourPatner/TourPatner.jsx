@@ -17,7 +17,7 @@ const TourPatner = () => {
         ></SectionTitle>
       </section>
 
-      <div className="flex justify-evenly w-[90%] m-auto">
+      <div className="md:flex justify-evenly w-[90%] m-auto space-y-5">
         <img className="h-16" src={img1} alt="" />
         <img className="h-14" src={img2} alt="" />
         <img className="h-10" src={img3} alt="" />

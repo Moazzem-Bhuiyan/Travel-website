@@ -9,11 +9,11 @@ const ConnectedUs = () => {
         }}
       >
         <div className="hero-overlay bg-opacity-20"></div>
-        <h1 className="text-5xl font-bold text-white -mt-60">
+        <h1 className="text-5xl font-bold text-white -mt-60 p-5">
           Subscribe to get speical price
         </h1>
 
-        <div className="w-1/2 flex bg-white py-1 px-2 -mt-5 rounded-full">
+        <div className=" md:w-1/2 flex bg-white py-1 md:px-2 -mt-5 rounded-full">
           <input
             type="search"
             name=""

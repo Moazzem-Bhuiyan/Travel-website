@@ -34,7 +34,7 @@ const About = () => {
         <h1 className="text-6xl font-bold text-white">About Us</h1>
       </div>
       {/* vission mission */}
-      <div className="card  grid gap-10 grid-cols-3 shadow-2xl px-10 items-center justify-center w-[80%] my-20 m-auto">
+      <div className="card  grid gap-10 md:grid-cols-3 shadow-2xl px-10 pb-10 items-center justify-center w-[80%] my-20 m-auto">
         <div className="bg-white rounded-xl  hover:scale-105 duration-1000   shadow-xl my-20 space-y-3 p-5 py-16">
           <FaPeopleCarry className="text-7xl" />
           <h1 className="text-2xl font-semibold">Greate Team Work</h1>
@@ -61,7 +61,7 @@ const About = () => {
         </div>
       </div>
       {/* comment */}
-      <div className="grid grid-cols-2 h-[400px] shadow-2xl my-20 p-10">
+      <div className="grid md:grid-cols-2 md:h-[400px] shadow-2xl my-20 p-10">
         <div className="flex justify-center">
           {" "}
           <img className="h-[300px]" src={about} alt="" />{" "}

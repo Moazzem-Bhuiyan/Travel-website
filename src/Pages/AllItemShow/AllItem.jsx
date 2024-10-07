@@ -23,9 +23,9 @@ const AllItem = () => {
         <p className="p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, ipsum?</p>
     </div>
    
-      <div className="grid grid-cols-3 my-20 gap-10">
+      <div className="grid md:grid-cols-3 p-4 my-20 gap-10">
         {menu.map((item) => (
-          <div className="bg-gray-200 pb-10">
+          <div className="bg-gray-200 pb-10 rounded-lg">
             <div>
               <img src={item.img} alt="" />
             </div>

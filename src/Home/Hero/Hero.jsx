@@ -9,7 +9,7 @@ const Hero = () => {
         }}
       >
         <div className="hero-overlay bg-opacity-20"></div>
-        <h1 className="text-6xl font-bold text-white -mt-60">
+        <h1 className="text-6xl font-bold text-white -mt-60 px-2 md:px-0">
           Make in your Journey
         </h1>
         <input

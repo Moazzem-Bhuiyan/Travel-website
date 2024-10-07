@@ -13,7 +13,7 @@ const Blog = () => {
         }}
       >
         <div className="hero-overlay bg-opacity-20"></div>
-        <h1 className="text-6xl font-bold text-white -mt-60">
+        <h1 className="text-6xl text-center font-bold text-white -mt-60">
           Make in your Journey
         </h1>
       </div>
@@ -22,7 +22,7 @@ const Blog = () => {
 
    {/* blog */}
 
-   <div className='grid grid-cols-6'>
+   <div className='grid md:grid-cols-6'>
 
     <div className='col-span-4 p-10 space-y-4'>
 

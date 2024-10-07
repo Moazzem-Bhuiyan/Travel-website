@@ -14,9 +14,9 @@ const PopulerItem = () => {
         <h1 className="text-4xl font -bold p-2">Populer Destination</h1>
         <p className="p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, ipsum?</p>
     </div>
-      <div className="grid grid-cols-3 my-20 gap-10">
+      <div className="grid md:grid-cols-3 my-20 gap-10 p-5">
         {populeritem.map((item) => (
-          <div className="bg-gray-200 pb-10">
+          <div className="bg-gray-200 pb-10 rounded-md">
             <div>
               <img src={item.img} alt="" />
             </div>

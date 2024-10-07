@@ -25,8 +25,31 @@ const NaturalSenary = () => {
 
       <div>
         <>
+          <div className="hidden md:block">
           <Swiper
             slidesPerView={3}
+            spaceBetween={30}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[FreeMode, Pagination]}
+            className="mySwiper my-10 hover:scale-75 duration-1000"
+          >
+            {menu.map((data) => (
+              <div className="">
+                <SwiperSlide className="">
+                  <img src={data.img} alt="" />
+                  <h1 className="text-2xl my-2 font-bold">{data.name}</h1>
+                  <p>{data.description}</p>
+                </SwiperSlide>
+              </div>
+            ))}
+          </Swiper>
+          </div>
+        <div className=" lg:hidden">
+        <Swiper
+            slidesPerView={1}
             spaceBetween={30}
             freeMode={true}
             pagination={{
@@ -45,6 +68,7 @@ const NaturalSenary = () => {
               </div>
             ))}
           </Swiper>
+        </div>
         </>
       </div>
     </div>
