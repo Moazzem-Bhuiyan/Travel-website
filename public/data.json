@@ -1,0 +1,173 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co.com/zRnMPhS/unsplash-Ncmd8u-Le8-H0.png",
+      "name": "Eiffel Tower Tour",
+      "description": "Experience breathtaking views of Paris from the top of the Eiffel Tower.",
+      "price": 49.99,
+      "rating": 4.8,
+      "category": "Popular"
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co.com/mX67Xsf/unsplash-QTe-GT478-8.png",
+      "name": "London Sightseeing Bus Tour",
+      "description": "Hop on and off at iconic locations around London.",
+      "price": 34.99,
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co.com/Lxygyhz/unsplash-UDv1n0x-Ip-U8.png",
+      "name": "Statue of Liberty Cruise",
+      "description": "Enjoy a scenic cruise around the Statue of Liberty.",
+      "price": 29.99,
+      "rating": 4.7,
+      "category": "Popular"
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co.com/R0wV9Sq/unsplash-gsllxm-VO4-HQ.png",
+      "name": "Tokyo City Tour",
+      "description": "Explore the vibrant culture and modern architecture of Tokyo.",
+      "price": 89.99,
+      "rating": 4.9,
+      "category": "Popular"
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co.com/g9P2vJv/unsplash-Io-Unv2cfx1c.png",
+      "name": "Sydney Opera House Tour",
+      "description": "Discover the history and beauty of the Sydney Opera House.",
+      "price": 59.99,
+      "rating": 4.6,
+      "category": "Popular"
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co.com/Lxygyhz/unsplash-UDv1n0x-Ip-U8.png",
+      "name": "Bali Beach Getaway",
+      "description": "Relax on the stunning beaches of Bali with inclusive activities.",
+      "price": 149.99,
+      "rating": 4.8
+    },
+    {
+      "id": 7,
+      "img": "https://i.ibb.co.com/R0wV9Sq/unsplash-gsllxm-VO4-HQ.png",
+      "name": "Rome Colosseum Tour",
+      "description": "Step back in time and explore the ancient Colosseum.",
+      "price": 39.99,
+      "rating": 4.7,
+      "category": "Popular"
+    },
+    {
+      "id": 8,
+      "img": "https://i.ibb.co.com/cQ2xq0n/Rectangle-18.png",
+      "name": "Dubai Desert Safari",
+      "description": "Experience the thrill of a desert safari with sandboarding and dinner.",
+      "price": 99.99,
+      "rating": 4.9,
+      "category": "Popular"
+    },
+    {
+      "id": 9,
+      "img": "https://i.ibb.co.com/R2CQS78/unsplash-s-ELc-HR-b-GVs.png ",
+      "name": "Cape Town Wine Tour",
+      "description": "Savor exquisite wines in the beautiful Cape Winelands.",
+      "price": 79.99,
+      "rating": 4.5,
+      "category": "Popular"
+    },
+    {
+      "id": 10,
+      "img": "https://i.ibb.co.com/kJjwdLd/Group-46.png",
+      "name": "Barcelona Gaudí Tour",
+      "description": "Explore the unique architecture of Antoni Gaudí in Barcelona.",
+      "price": 44.99,
+      "rating": 4.8
+    },
+    {
+      "id": 11,
+      "img": "https://i.ibb.co.com/H7hXypT/unsplash-QAwci-Fl-S1g4.png",
+      "name": "Athens Acropolis Tour",
+      "description": "Visit the iconic Acropolis and learn about ancient Greek history.",
+      "price": 39.99,
+      "rating": 4.6,
+      "category": "Popular"
+    },
+    {
+      "id": 12,
+      "img": "https://i.ibb.co.com/R2CQS78/unsplash-s-ELc-HR-b-GVs.png",
+      "name": "Istanbul Bosphorus Cruise",
+      "description": "Enjoy a scenic cruise on the Bosphorus with stunning views.",
+      "price": 25.99,
+      "rating": 4.5
+    },
+    {
+      "id": 13,
+      "img": "https://i.ibb.co.com/mX67Xsf/unsplash-QTe-GT478-8.png",
+      "name": "Moscow City Tour",
+      "description": "Explore the historic sites and vibrant culture of Moscow.",
+      "price": 54.99,
+      "rating": 4.6,
+      "category": "Popular"
+    },
+    {
+      "id": 14,
+      "img": "https://i.ibb.co.com/H7hXypT/unsplash-QAwci-Fl-S1g4.png",
+      "name": "Krakow Auschwitz Tour",
+      "description": "A poignant visit to the historical site of Auschwitz-Birkenau.",
+      "price": 29.99,
+      "rating": 4.8
+    },
+    {
+      "id": 15,
+      "img": "https://i.ibb.co.com/mX67Xsf/unsplash-QTe-GT478-8.png",
+      "name": "Stockholm Archipelago Tour",
+      "description": "Discover the beauty of the Stockholm Archipelago on this boat tour.",
+      "price": 45.99,
+      "rating": 4.7
+    },
+    {
+      "id": 16,
+      "img": "https://i.ibb.co.com/kJjwdLd/Group-46.png",
+      "name": "Las Vegas Strip Night Tour",
+      "description": "Experience the dazzling lights of the Las Vegas Strip at night.",
+      "price": 39.99,
+      "rating": 4.6
+    },
+    {
+      "id": 17,
+      "img": "https://i.ibb.co.com/cQ2xq0n/Rectangle-18.png",
+      "name": "Angkor Wat Sunrise Tour",
+      "description": "Witness the stunning sunrise over Angkor Wat, a UNESCO World Heritage Site.",
+      "price": 29.99,
+      "rating": 4.9
+    },
+    {
+      "id": 18,
+      "img": "https://i.ibb.co.com/kJjwdLd/Group-46.png",
+      "name": "Lisbon Tram 28 Tour",
+      "description": "Ride the iconic Tram 28 through the charming streets of Lisbon.",
+      "price": 19.99,
+      "rating": 4.5,
+      "category": "Popular"
+    },
+    {
+      "id": 19,
+      "img": "https://i.ibb.co.com/mX67Xsf/unsplash-QTe-GT478-8.png",
+      "name": "Budapest Thermal Bath Experience",
+      "description": "Relax in one of Budapest's famous thermal baths.",
+      "price": 39.99,
+      "rating": 4.8
+    },
+    {
+      "id": 20,
+      "img": "https://i.ibb.co.com/H7hXypT/unsplash-QAwci-Fl-S1g4.png",
+      "name": "San Francisco Golden Gate Bridge Tour",
+      "description": "Take a guided tour of the iconic Golden Gate Bridge.",
+      "price": 29.99,
+      "rating": 4.7
+    }
+  ]
+  

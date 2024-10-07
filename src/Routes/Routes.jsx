@@ -1,0 +1,54 @@
+import { createBrowserRouter } from "react-router-dom";
+import Home from "../Home/Home/Home";
+import Main from "../Layouts/Main/Main";
+import About from "../Pages/About/About";
+import Packege from "../Pages/About/Packeg/Packege";
+import Blog from "../Pages/Blog/Blog";
+import Contact from "../Pages/Contact/Contact";
+import Populer from "../Pages/PopulerPackeg/Populer";
+import PopulerItem from "../Pages/PopulerItemShow/PopulerItem";
+import AllItem from "../Pages/AllItemShow/AllItem";
+
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Main></Main>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/packege",
+        element: <Packege></Packege>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+    ],
+  },
+
+  {
+    path: "/populer",
+    element: <Populer></Populer>,
+    children: [
+      {
+        path: "",
+        element: <PopulerItem></PopulerItem>,
+      },
+      {
+        path: "allitem",
+        element: <AllItem></AllItem>,
+      },
+    ],
+  },
+]);

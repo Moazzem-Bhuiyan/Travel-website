@@ -1,0 +1,53 @@
+[
+    {
+      "name": "John Doe",
+      "description": "An amazing experience! The service was top-notch and everything went smoothly.",
+      "rating": 4.8
+    },
+    {
+      "name": "Jane Smith",
+      "description": "Loved the ambiance and the staff was really friendly. Highly recommend!",
+      "rating": 4.6
+    },
+    {
+      "name": "Michael Brown",
+      "description": "A decent experience, but I felt it could have been better organized.",
+      "rating": 3.7
+    },
+    {
+      "name": "Emily Davis",
+      "description": "Absolutely fantastic! The views were breathtaking and the tour guide was knowledgeable.",
+      "rating": 5.0
+    },
+    {
+      "name": "Chris Wilson",
+      "description": "It was okay, but there were some delays that made the trip less enjoyable.",
+      "rating": 3.2
+    },
+    {
+      "name": "Jessica Taylor",
+      "description": "The perfect vacation! Everything was planned out perfectly and we had a great time.",
+      "rating": 4.9
+    },
+    {
+      "name": "Daniel Thompson",
+      "description": "Good experience overall, but a bit overpriced for what was offered.",
+      "rating": 4.0
+    },
+    {
+      "name": "Sarah White",
+      "description": "Excellent service and beautiful locations. Would definitely do it again.",
+      "rating": 4.7
+    },
+    {
+      "name": "Matthew Lee",
+      "description": "It was fine, but I expected more for the price. Some aspects could be improved.",
+      "rating": 3.5
+    },
+    {
+      "name": "Olivia Martin",
+      "description": "Best trip of my life! Everything was beyond my expectations, and the food was amazing.",
+      "rating": 5.0
+    }
+  ]
+  
