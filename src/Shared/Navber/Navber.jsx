@@ -6,10 +6,14 @@ import { AuthContext } from "../../Auth/AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
 import { FaUser } from "react-icons/fa";
 import { li } from "framer-motion/client";
+import UseCart from "../../Hooks/usecart/UseCart";
 
 const Navber = () => {
   const {user,Logout}=useContext(AuthContext)
   const navigate = useNavigate();
+
+  const [cart] =UseCart();
+  const totalPrice = cart.reduce((total,item)=> total + item.price,0)
 
   const handleOut= ()=>{
 
@@ -85,7 +89,7 @@ const Navber = () => {
               {navlink}
             </ul>
           </div>
-          <img className="" src={logo} alt="" />
+          <img className="btn btn-ghost" src={logo} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-5 px-1">
@@ -111,17 +115,18 @@ const Navber = () => {
               strokeWidth="2"
               d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
           </svg>
-          <span className="badge badge-sm indicator-item">0 </span>
+          <span className="badge badge-sm indicator-item">{cart.length}</span>
         </div>
       </div>
       <div
         tabIndex={0}
         className="card card-compact dropdown-content bg-white z-[1] mt-3 w-52 shadow">
         <div className="card-body">
-          <span className="text-lg font-bold">0</span>
-          <span className="text-info">Subtotal: $999</span>
+          <span className="text-lg font-bold">{cart.length}</span>
+          <span className="text-info">Subtotal: {totalPrice}</span>
           <div className="card-actions">
-            <button className="btn btn-primary btn-block">View cart</button>
+            <Link to='/carts' >  <button className="btn bg-red-500 text-white btn-block">View cart</button></Link>
+          
           </div>
         </div>
       </div>
@@ -140,10 +145,10 @@ const Navber = () => {
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
         <li>
-          <a className="justify-between">
+          <Link to ='/userinfo'><a className="justify-between">
             Profile
-            <span className="badge">New</span>
-          </a>
+          
+          </a></Link>
         </li>
         <li><a>Settings</a></li>
 

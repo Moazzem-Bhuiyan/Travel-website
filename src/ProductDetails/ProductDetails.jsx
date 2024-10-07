@@ -2,6 +2,7 @@ import { Rating } from "@mui/material";
 import { useLoaderData, useParams } from "react-router-dom";
 import ConnectedUs from "../Home/ConectedUs/ConnectedUs";
 import plan from '../assets/tour/plan.png'
+import AddBookingcart from "../AddBooking/AddBookingcart";
 
 
 const ProductDetails = () => {
@@ -15,7 +16,7 @@ const ProductDetails = () => {
     return (
         <div>
 
-            <div className="w-[50%] m-auto space-y-4 pb-10 shadow-2xl my-20 rounded-xl ">
+            <div className=" md:w-[50%] p-5 md:p-0 m-auto space-y-4 pb-10 shadow-2xl my-20 rounded-xl ">
 
                 <img className="w-full" src={product.img} alt="" />
 
@@ -37,7 +38,7 @@ const ProductDetails = () => {
                 precision={0.5} // Adjust this if you want half ratings
               />
 
-              <button className=" bg-black p-1 px-3 rounded-md text-white ">Booking</button>
+<AddBookingcart product={product} />
             </div>
 
 
@@ -46,7 +47,7 @@ const ProductDetails = () => {
 
 
             </div>
-            
+
             <div>
                 <img src={plan} alt="" />
             </div>

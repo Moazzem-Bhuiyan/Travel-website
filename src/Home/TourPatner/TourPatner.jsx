@@ -17,12 +17,12 @@ const TourPatner = () => {
         ></SectionTitle>
       </section>
 
-      <div className="md:flex justify-evenly w-[90%] m-auto space-y-5">
-        <img className="h-16" src={img1} alt="" />
-        <img className="h-14" src={img2} alt="" />
-        <img className="h-10" src={img3} alt="" />
-        <img className="h-10" src={img4} alt="" />
-        <img className="h-10" src={img5} alt="" />
+      <div className="md:flex  justify-evenly w-[90%] m-auto space-y-5">
+        <img className="h-14" src={img1} alt="" />
+        <img className="h-13" src={img2} alt="" />
+        <img className="h-8" src={img3} alt="" />
+        <img className="h-9" src={img4} alt="" />
+        <img className="h-7" src={img5} alt="" />
       </div>
     </div>
   );

@@ -12,6 +12,8 @@ import ProductDetails from "../ProductDetails/ProductDetails";
 import SignUp from "../Auth/SignUp/SignUp";
 import SignIn from "../Auth/SignIn/SignIn";
 import PrivateAuth from "../Auth/PrivateAuth/PrivateAuth";
+import Mycart from "../Pages/MyCart/Mycart";
+import Userinformation from "../UserInformation/Userinformation";
 
 export const router = createBrowserRouter([
   {
@@ -53,6 +55,18 @@ export const router = createBrowserRouter([
       {
         path : '/signin',
         element: <SignIn></SignIn>
+      },
+      // cart
+
+      {
+        path: '/carts',
+        element: <Mycart></Mycart>
+      },
+      // userinformation
+      {
+        path: "/userinfo",
+        element: <Userinformation></Userinformation>
+
       }
 
     ],

@@ -3,6 +3,7 @@ import Usedata from "../../Hooks/UseData/Usedata";
 import { FaEye } from "react-icons/fa";
 import ConnectedUs from "../../Home/ConectedUs/ConnectedUs";
 import { Link } from "react-router-dom";
+import AddBookingcart from "../../AddBooking/AddBookingcart";
 
 const PopulerItem = () => {
   const { menu } = Usedata();
@@ -33,7 +34,7 @@ const PopulerItem = () => {
             <Link to = {`/productdetails/${item.id}`}>  <button  className="text-2xl">
                 <FaEye></FaEye>
               </button>{" "}</Link>
-              <button className="btn text-white">Booking</button>{" "}
+              <AddBookingcart product={item} />
             </div>
           </div>
         ))}
