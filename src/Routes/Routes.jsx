@@ -8,6 +8,10 @@ import Contact from "../Pages/Contact/Contact";
 import Populer from "../Pages/PopulerPackeg/Populer";
 import PopulerItem from "../Pages/PopulerItemShow/PopulerItem";
 import AllItem from "../Pages/AllItemShow/AllItem";
+import ProductDetails from "../ProductDetails/ProductDetails";
+import SignUp from "../Auth/SignUp/SignUp";
+import SignIn from "../Auth/SignIn/SignIn";
+import PrivateAuth from "../Auth/PrivateAuth/PrivateAuth";
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +38,23 @@ export const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>,
       },
+      {
+        path: "/productdetails/:id",
+        element: <PrivateAuth><ProductDetails></ProductDetails></PrivateAuth> ,
+        loader : ()=>fetch('/data.json')
+      },
+
+      // auth related Routes
+
+      {
+        path : '/signup',
+        element: <SignUp></SignUp>
+      },
+      {
+        path : '/signin',
+        element: <SignIn></SignIn>
+      }
+
     ],
   },
 

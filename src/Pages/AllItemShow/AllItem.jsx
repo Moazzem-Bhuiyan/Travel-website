@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { FaEye } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 const AllItem = () => {
@@ -38,9 +39,9 @@ const AllItem = () => {
 
             <div className="flex justify-between px-5">
               {" "}
-              <button className="text-2xl">
-               <FaEye></FaEye>
-              </button>{" "}
+              <Link to = {`/productdetails/${item.id}`}>  <button  className="text-2xl">
+                <FaEye></FaEye>
+              </button>{" "}</Link>
               <button className="btn text-white">Booking</button>{" "}
             </div>
           </div>

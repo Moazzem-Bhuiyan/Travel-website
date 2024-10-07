@@ -2,6 +2,7 @@ import React from "react";
 import Usedata from "../../Hooks/UseData/Usedata";
 import { FaEye } from "react-icons/fa";
 import ConnectedUs from "../../Home/ConectedUs/ConnectedUs";
+import { Link } from "react-router-dom";
 
 const PopulerItem = () => {
   const { menu } = Usedata();
@@ -29,9 +30,9 @@ const PopulerItem = () => {
 
             <div className="flex justify-between px-5">
               {" "}
-              <button className="text-2xl">
+            <Link to = {`/productdetails/${item.id}`}>  <button  className="text-2xl">
                 <FaEye></FaEye>
-              </button>{" "}
+              </button>{" "}</Link>
               <button className="btn text-white">Booking</button>{" "}
             </div>
           </div>
