@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaEye } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import AddBookingcart from '../../AddBooking/AddBookingcart';
+import { motion } from 'framer-motion';
 
 const AllItem = () => {
   const [menu, SetMenu] = useState([]);
@@ -21,7 +22,14 @@ const AllItem = () => {
 
       <div className="grid md:grid-cols-3 p-4 my-20 gap-10">
         {menu.map((item) => (
-          <div key={item.id} className="bg-gray-200 pb-10 rounded-lg">
+          <motion.div
+            key={item.id}
+            className="bg-gray-200 pb-10 rounded-lg"
+            initial={{ opacity: 0, y: 20 }} // Initial state
+            animate={{ opacity: 1, y: 0 }}   // Animation on load
+            transition={{ duration: 0.5 }}    // Animation duration
+            whileHover={{ scale: 1.05 }}      // Scale effect on hover
+          >
             <div>
               <img src={item.img} alt="" />
             </div>
@@ -41,7 +49,7 @@ const AllItem = () => {
               {/* Add Booking Cart for each product */}
               <AddBookingcart product={item} />
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

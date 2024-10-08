@@ -11,16 +11,17 @@ import a13 from "../../assets/choose/13.png";
 import a14 from "../../assets/choose/14.png";
 import { useEffect } from "react";
 import AOS from "aos"; // Correct import
-
 import "aos/dist/aos.css"; // Import AOS styles
 import ConnectedUs from "../../Home/ConectedUs/ConnectedUs";
 
 const About = () => {
-  AOS.init({
-    duration: 1000,
-    easing: "ease-in-out",
-    once: true, // Animation only happens once
-  });
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true, // Animation only happens once
+    });
+  }, []);
 
   return (
     <div>
@@ -31,19 +32,19 @@ const About = () => {
         }}
       >
         <div className="hero-overlay bg-opacity-20"></div>
-        <h1 className="text-6xl font-bold text-white">About Us</h1>
+        <h1 className="text-6xl font-bold text-white" data-aos="fade-up">About Us</h1>
       </div>
       {/* vission mission */}
-      <div className="card  grid gap-10 md:grid-cols-3 shadow-2xl px-10 pb-10 items-center justify-center w-[80%] my-20 m-auto">
-        <div className="bg-white rounded-xl  hover:scale-105 duration-1000   shadow-xl my-20 space-y-3 p-5 py-16">
+      <div className="card grid gap-10 md:grid-cols-3 shadow-2xl px-10 pb-10 items-center justify-center w-[80%] my-20 m-auto">
+        <div className="bg-white rounded-xl hover:scale-105 duration-1000 shadow-xl my-20 space-y-3 p-5 py-16" data-aos="fade-up">
           <FaPeopleCarry className="text-7xl" />
-          <h1 className="text-2xl font-semibold">Greate Team Work</h1>
+          <h1 className="text-2xl font-semibold">Great Team Work</h1>
           <p className="text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
             dignissimos.
           </p>
         </div>
-        <div className=" bg-white rounded-xl hover:scale-105 duration-1000  shadow-xl space-y-3 p-5 py-24">
+        <div className="bg-white rounded-xl hover:scale-105 duration-1000 shadow-xl space-y-3 p-5 py-24" data-aos="fade-up" data-aos-delay="200">
           <FaFileInvoiceDollar className="text-7xl" />
           <h1 className="text-2xl font-semibold">Our Mission</h1>
           <p className="text-gray-400">
@@ -51,9 +52,9 @@ const About = () => {
             dignissimos.
           </p>
         </div>
-        <div className="bg-white rounded-xl hover:scale-105 duration-1000 shadow-xl space-y-3 p-5 py-16">
+        <div className="bg-white rounded-xl hover:scale-105 duration-1000 shadow-xl space-y-3 p-5 py-16" data-aos="fade-up" data-aos-delay="400">
           <FaTrophy className="text-7xl" />
-          <h1 className="text-2xl font-semibold">Our Vission</h1>
+          <h1 className="text-2xl font-semibold">Our Vision</h1>
           <p className="text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
             dignissimos.
@@ -61,10 +62,9 @@ const About = () => {
         </div>
       </div>
       {/* comment */}
-      <div className="grid md:grid-cols-2 md:h-[400px] shadow-2xl my-20 p-10">
+      <div className="grid md:grid-cols-2 md:h-[400px] shadow-2xl my-20 p-10" data-aos="fade-up">
         <div className="flex justify-center">
-          {" "}
-          <img className="h-[300px]" src={about} alt="" />{" "}
+          <img className="h-[300px]" src={about} alt="" />
         </div>
 
         <div className="space-y-3 mt-16">
@@ -83,15 +83,15 @@ const About = () => {
       {/* gallery */}
 
       <div>
-        <div className=" my-10">
+        <div className="my-10">
           <div className="grid md:grid-cols-4 p-10 md:p-0 gap-10 ">
             {/* Large Image */}
-            <div className="col-span-2 row-span-2 " data-aos="fade-up">
+            <div className="col-span-2 row-span-2" data-aos="fade-up">
               <img src={a11} alt="New Arrival 1" />
             </div>
             {/* Small Image */}
             <div
-              className="col-span-2 "
+              className="col-span-2"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -99,14 +99,14 @@ const About = () => {
             </div>
             {/* Smaller Images */}
             <div
-              className="col-span-1 "
+              className="col-span-1"
               data-aos="fade-left"
               data-aos-delay="200"
             >
               <img className="w-full" src={a13} alt="New Arrival 3" />
             </div>
             <div
-              className="col-span-1 "
+              className="col-span-1"
               data-aos="fade-right"
               data-aos-delay="300"
             >

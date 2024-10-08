@@ -5,7 +5,7 @@ const Usedata = () => {
 
   useEffect(() => {
 
-    fetch("http://localhost:5000/packege")
+    fetch("https://travel-server-eight-rho.vercel.app/packege")
       .then((res) => res.json())
       .then((data) => setMenu(data));
   }, []);
