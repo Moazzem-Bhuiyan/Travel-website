@@ -25,7 +25,7 @@ const Testomonial = () => {
     <div className="my-20 testomonial-swiper bg-slate-50 py-10">
       <div className="p-4 space-y-2">
         <h1 className="uppercase text-2xl" data-aos="fade-up" data-aos-duration="1000">Testomonial</h1>
-        <h1 className="text-4xl font-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">What our client say</h1>
+        <h1 className="text-4xl font-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">What Our client say</h1>
         <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Create a visual identity for your company and a overall brand</p>
       </div>
 
