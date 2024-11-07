@@ -102,7 +102,7 @@ const Blog = () => {
                         <hr />
             {/* post blog */}
 
-            <h1 className=' text-center text-4xl my-5 '> Post A Blog for travel tips and Insights.</h1>
+            <h1 className=' text-center text-4xl my-5 '> Post A Blog for travel tips and Insights</h1>
 
             <form onSubmit={handleSubmit(onSubmit)} className="p-4">
       <div className="mb-4">
