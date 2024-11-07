@@ -14,8 +14,7 @@ const AddBookingcart = ({ product }) => {
 
   const handleAddcart = () => {
     if (user && user.email) {
-      // send cart to database
-      console.log(product, user.email);
+      // Create the cart item object
       const cartItem = {
         menuId: id,
         email: user.email,
@@ -24,8 +23,8 @@ const AddBookingcart = ({ product }) => {
         price,
       };
 
+      // Send the cart item to the database
       axiosSecure.post('/addcarts', cartItem).then(res => {
-        console.log(res.data);
         if (res.data.insertedId) {
           Swal.fire({
             position: "top-end",
@@ -34,11 +33,12 @@ const AddBookingcart = ({ product }) => {
             showConfirmButton: false,
             timer: 1500,
           });
-          refetch();
+          refetch(); // Refetch the cart items
         }
       });
     } else {
-      navigate('/singin');
+      // Navigate to the sign-in page if the user is not logged in
+      navigate('/signup');
     }
   };
 
@@ -48,7 +48,7 @@ const AddBookingcart = ({ product }) => {
         onClick={handleAddcart}
         className="btn text-white transition-transform duration-300 hover:scale-105 hover:bg-blue-600 bg-blue-500 py-2 px-4 rounded"
       >
-        Booking
+        Add To Book
       </button>
     </div>
   );

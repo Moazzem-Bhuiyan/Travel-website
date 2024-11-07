@@ -38,7 +38,7 @@ const NaturalSenary = () => {
           >
             {menu.map((data) => (
               <div className="">
-                <SwiperSlide className="">
+                <SwiperSlide className="mb-20">
                   <img src={data.img} alt="" />
                   <h1 className="text-2xl my-2 font-bold">{data.name}</h1>
                   <p>{data.description}</p>
@@ -60,7 +60,7 @@ const NaturalSenary = () => {
           >
             {menu.map((data) => (
               <div className="">
-                <SwiperSlide className="">
+                <SwiperSlide className="my-10">
                   <img src={data.img} alt="" />
                   <h1 className="text-2xl my-2 font-bold">{data.name}</h1>
                   <p>{data.description}</p>

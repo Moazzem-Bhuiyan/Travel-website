@@ -14,6 +14,7 @@ import SignIn from "../Auth/SignIn/SignIn";
 import PrivateAuth from "../Auth/PrivateAuth/PrivateAuth";
 import Mycart from "../Pages/MyCart/Mycart";
 import Userinformation from "../UserInformation/Userinformation";
+import AddBookingcart from "../AddBooking/AddBookingcart";
 
 export const router = createBrowserRouter([
   {
@@ -44,6 +45,11 @@ export const router = createBrowserRouter([
         path: "/productdetails/:id",
         element: <PrivateAuth><ProductDetails></ProductDetails></PrivateAuth> ,
         loader : ()=>fetch('/data.json')
+      },
+      {
+        path: "/booknow",
+        element: <PrivateAuth><AddBookingcart></AddBookingcart></PrivateAuth>
+       
       },
 
       // auth related Routes

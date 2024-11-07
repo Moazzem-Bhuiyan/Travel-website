@@ -2,8 +2,17 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // AOS CSS Import
 import ConnectedUs from '../../Home/ConectedUs/ConnectedUs';
+import { useForm } from 'react-hook-form';
 
 const Blog = () => {
+
+    const { register, handleSubmit, formState: { errors } } = useForm();
+
+    const onSubmit = (data) => {
+      console.log(data);
+
+    };
+
     useEffect(() => {
         AOS.init({ duration: 1000 }); // Initialize AOS
     }, []);
@@ -90,6 +99,51 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
+                        <hr />
+            {/* post blog */}
+
+            <h1 className=' text-center text-4xl my-5 '> Post A Blog for travel tips and Insights.</h1>
+
+            <form onSubmit={handleSubmit(onSubmit)} className="p-4">
+      <div className="mb-4">
+        <label htmlFor="name" className="block mb-2">Name:</label>
+        <input
+          type="text"
+          id="name"
+          {...register('name', { required: true })}
+          className="border rounded p-2 w-full bg-white"
+        />
+        {errors.name && <p className="text-red-500">Name is required</p>}
+      </div>
+
+      <div className="mb-4">
+        <label htmlFor="comment" className="block mb-2">Comment:</label>
+        <textarea
+          id="comment"
+          {...register('comment', { required: true })}
+          className="border rounded p-2 w-full  bg-white "
+        ></textarea>
+        {errors.comment && <p className="text-red-500">Comment is required</p>}
+      </div>
+
+      <div className="mb-4">
+        <label htmlFor="image" className="block mb-2">Image URL:</label>
+        <input
+          type="url"
+          id="image"
+          {...register('image', { required: true })}
+          className="border rounded p-2 w-full  bg-white "
+        />
+        {errors.image && <p className="text-red-500">Image URL is required</p>}
+      </div>
+
+      <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded">
+        Submit
+      </button>
+    </form>
+
+
+
 
             <ConnectedUs />
         </div>

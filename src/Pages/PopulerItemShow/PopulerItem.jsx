@@ -30,7 +30,7 @@ const PopulerItem = () => {
     target.style.transform = `translate(${offsetX / 10}px, ${offsetY / 10}px)`;
   };
 
-  // Reset transform on mouse leave
+ 
   const handleMouseLeave = (e) => {
     e.currentTarget.style.transform = "translate(0, 0)";
   };
@@ -40,7 +40,8 @@ const PopulerItem = () => {
       <div className="my-10">
         <h1 className="text-4xl font-bold p-2">Popular Destination</h1>
         <p className="p-2">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, ipsum?
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Exercitationem, ipsum?
         </p>
       </div>
       <div className="grid md:grid-cols-3 my-20 gap-10 p-5">
